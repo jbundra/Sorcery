@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Materials/Material.h"
 #include "STile.generated.h"
 
 UCLASS()
@@ -16,6 +17,7 @@ public:
 	ASTile();
 
 	//Define tile variables here
+	UMaterial* tileMat;
 
 protected:
 	// Called when the game starts or when spawned
