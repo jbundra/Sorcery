@@ -14,7 +14,11 @@ class SORCERY_API ASSandTile : public ASTile
 {
 	GENERATED_BODY()
 	
-	
+		ASSandTile();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 	
 	
 };

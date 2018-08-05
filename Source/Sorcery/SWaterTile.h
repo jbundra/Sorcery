@@ -14,7 +14,11 @@ class SORCERY_API ASWaterTile : public ASTile
 {
 	GENERATED_BODY()
 	
-	
+		ASWaterTile();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 	
 	
 };

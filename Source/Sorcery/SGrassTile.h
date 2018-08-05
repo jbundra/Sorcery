@@ -13,8 +13,12 @@ UCLASS()
 class SORCERY_API ASGrassTile : public ASTile
 {
 	GENERATED_BODY()
+
+		ASGrassTile();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 	
-	
-	
-	
+
 };

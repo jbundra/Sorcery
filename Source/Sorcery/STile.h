@@ -5,6 +5,10 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Materials/Material.h"
+#include "Engine/StaticMesh.h"
+#include "Engine/Classes/Components/MeshComponent.h"
+#include "Engine/Classes/Materials/MaterialInstanceDynamic.h"
+#include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
 #include "STile.generated.h"
 
 UCLASS()
@@ -18,6 +22,10 @@ public:
 
 	//Define tile variables here
 	UMaterial* tileMat;
+
+	UStaticMesh* meshToUse;
+	UStaticMeshComponent* meshComp;
+	UMaterialInstanceDynamic* dynTileMat;
 
 protected:
 	// Called when the game starts or when spawned

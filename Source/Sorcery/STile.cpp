@@ -9,6 +9,14 @@ ASTile::ASTile()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//Mesh component
+	meshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GrassTile"));
+
+	//Mesh of the tile
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/Sorcery/Tile/hexagongridpiece.hexagongridpiece'"));
+	if (MeshObj.Succeeded()) {
+		meshToUse = MeshObj.Object;
+	}
 }
 
 // Called when the game starts or when spawned
