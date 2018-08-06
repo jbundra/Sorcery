@@ -44,13 +44,13 @@ void ASWorldGrid::CreateWorld() {
 	SpawnTile(FIntVector(-2, 0, 0), ASWaterTile::StaticClass());
 	SpawnTile(FIntVector(-1, -2, 0), ASWaterTile::StaticClass());
 	SpawnTile(FIntVector(-1, -1, 0), ASWaterTile::StaticClass());
-	SpawnTile(FIntVector(-1, 0, 0), ASWaterTile::StaticClass());
 
 	//sand tiles
 	SpawnTile(FIntVector(0, -2, 0), ASSandTile::StaticClass());
 	SpawnTile(FIntVector(0, -1, 0), ASSandTile::StaticClass());
 	SpawnTile(FIntVector(0, 0, 0), ASSandTile::StaticClass());
 	SpawnTile(FIntVector(0, 1, 0), ASSandTile::StaticClass());
+	SpawnTile(FIntVector(-1, 0, 0), ASSandTile::StaticClass());
 	SpawnTile(FIntVector(-1, 1, 0), ASSandTile::StaticClass());
 	SpawnTile(FIntVector(-2, 1, 0), ASSandTile::StaticClass());
 
@@ -59,6 +59,10 @@ void ASWorldGrid::CreateWorld() {
 	SpawnTile(FIntVector(1, -1, 0), ASGrassTile::StaticClass());
 	SpawnTile(FIntVector(1, 0, 0), ASGrassTile::StaticClass());
 	SpawnTile(FIntVector(1, 1, 0), ASGrassTile::StaticClass());
+	SpawnTile(FIntVector(2, -2, 0), ASGrassTile::StaticClass());
+	SpawnTile(FIntVector(2, -1, 0), ASGrassTile::StaticClass());
+	SpawnTile(FIntVector(2, 0, 0), ASGrassTile::StaticClass());
+	SpawnTile(FIntVector(2, 1, 0), ASGrassTile::StaticClass());
 
 	//dirt tiles
 	SpawnTile(FIntVector(1, 2, 0), ASDirtTile::StaticClass());
