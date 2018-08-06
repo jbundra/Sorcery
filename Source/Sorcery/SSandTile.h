@@ -13,6 +13,8 @@ UCLASS()
 class SORCERY_API ASSandTile : public ASTile
 {
 	GENERATED_BODY()
+
+public:
 	
 		ASSandTile();
 

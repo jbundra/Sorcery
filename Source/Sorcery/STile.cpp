@@ -2,6 +2,9 @@
 
 #include "STile.h"
 
+const float ASTile::HEX_WIDTH = 1.73205f;
+const float ASTile::HEX_LENGTH = 2.0f;
+const float ASTile::HEX_HEIGHT = 0.23442f;
 
 // Sets default values
 ASTile::ASTile()

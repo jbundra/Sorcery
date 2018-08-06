@@ -5,6 +5,10 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "STile.h"
+#include "SGrassTile.h"
+#include "SDirtTile.h"
+#include "SSandTile.h"
+#include "SWaterTile.h"
 #include "SWorldGrid.generated.h"
 
 UCLASS()
@@ -16,7 +20,9 @@ public:
 	// Sets default values for this actor's properties
 	ASWorldGrid();
 
-	TArray<ASTile*> TileGrid;
+	void CreateWorld();
+
+	void SpawnTile(FIntVector pos, TSubclassOf<ASTile> tileClass);
 
 protected:
 	// Called when the game starts or when spawned

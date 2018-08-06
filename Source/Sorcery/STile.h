@@ -9,6 +9,7 @@
 #include "Engine/Classes/Components/MeshComponent.h"
 #include "Engine/Classes/Materials/MaterialInstanceDynamic.h"
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
+#include "Core/Public/Math/Vector.h"
 #include "STile.generated.h"
 
 UCLASS()
@@ -26,6 +27,12 @@ public:
 	UStaticMesh* meshToUse;
 	UStaticMeshComponent* meshComp;
 	UMaterialInstanceDynamic* dynTileMat;
+
+	FIntVector coordinates;
+
+	static const float HEX_WIDTH;
+	static const float HEX_LENGTH;
+	static const float HEX_HEIGHT;
 
 protected:
 	// Called when the game starts or when spawned

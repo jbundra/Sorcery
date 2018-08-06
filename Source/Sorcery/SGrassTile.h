@@ -14,6 +14,8 @@ class SORCERY_API ASGrassTile : public ASTile
 {
 	GENERATED_BODY()
 
+public:
+
 		ASGrassTile();
 
 protected:

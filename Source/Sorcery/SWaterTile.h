@@ -13,6 +13,8 @@ UCLASS()
 class SORCERY_API ASWaterTile : public ASTile
 {
 	GENERATED_BODY()
+
+public:
 	
 		ASWaterTile();
 
