@@ -4,16 +4,25 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "ASCharacter.generated.h"
+#include "Materials/Material.h"
+#include "Engine/SkeletalMesh.h"
+#include "Engine/Classes/Components/SkeletalMeshComponent.h"
+#include "Engine/Classes/Materials/MaterialInstanceDynamic.h"
+#include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h"
+#include "SCharacter.generated.h"
 
 UCLASS()
-class SORCERY_API AASCharacter : public ACharacter
+class SORCERY_API ASCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	AASCharacter();
+	ASCharacter();
+
+	USkeletalMesh* skeletalMeshToUse;
+	USkeletalMeshComponent* skeletalMeshComp;
+	UMaterialInstanceDynamic* dynTileMat;
 
 protected:
 	// Called when the game starts or when spawned

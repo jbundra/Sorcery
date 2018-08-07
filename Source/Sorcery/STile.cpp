@@ -13,7 +13,7 @@ ASTile::ASTile()
 	PrimaryActorTick.bCanEverTick = true;
 
 	//Mesh component
-	meshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GrassTile"));
+	meshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TileMesh"));
 
 	//Mesh of the tile
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/Sorcery/Tile/hexagongridpiece.hexagongridpiece'"));

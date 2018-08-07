@@ -9,6 +9,7 @@
 #include "SDirtTile.h"
 #include "SSandTile.h"
 #include "SWaterTile.h"
+#include "SCharacter.h"
 #include "SWorldGrid.generated.h"
 
 UCLASS()

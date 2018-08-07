@@ -80,6 +80,9 @@ void ASWorldGrid::CreateWorld() {
 	SpawnTile(FIntVector(0, 2, 2), ASGrassTile::StaticClass());
 	SpawnTile(FIntVector(-1, 2, 3), ASGrassTile::StaticClass());
 	SpawnTile(FIntVector(-2, 2, 3), ASGrassTile::StaticClass());
+
+	//spawn the player
+	ASCharacter* playerCharacter = GetWorld()->SpawnActor<ASCharacter>(ASCharacter::StaticClass(), FVector(0, 0, 0), FRotator(0, 0, 0));
 }
 
 void ASWorldGrid::SpawnTile(FIntVector pos, TSubclassOf<ASTile> tileClass) {
